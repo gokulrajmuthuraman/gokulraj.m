@@ -1,0 +1,31 @@
+1.Largest of three
+
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b and a>c:
+    print("a is largest")
+elif b>a and b>c:
+    print("b is largest")
+elif c>a and c>b:
+    print("c is largest")
+else:
+    print("Numbers are equal")
+
+2.Leap Year
+
+a=int(input())
+if(a%4==0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+3.Left triangle Star pattern
+
+a=int(input())
+for i in range(0,a):
+    for j in range(0,i+1):
+        print("*",end=" ")
+    print("")
+
+
