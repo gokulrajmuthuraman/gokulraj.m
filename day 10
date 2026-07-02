@@ -1,0 +1,66 @@
+'''class Solution(object):
+    def triangleType(self, nums):
+
+        if nums[0] + nums[1] <= nums[2] or \
+           nums[0] + nums[2] <= nums[1] or \
+           nums[1] + nums[2] <= nums[0]:
+            return "none"
+
+        if nums[0] == nums[1] == nums[2]:
+            return "equilateral"
+
+        elif nums[0] == nums[1] or nums[1] == nums[2] or nums[0] == nums[2]:
+            return "isosceles"
+
+        else:
+            return "scalene"'''
+
+'''nums = [5,4,-1,7,8]
+maxi = nums[0]
+for i in range(len(nums)):
+    total = 0
+    for j in range(i, len(nums)):
+        total += nums[j]
+        maxi = max(maxi, total)
+print(maxi)'''
+
+'''class Solution(object):
+    def canAliceWin(self, nums):
+        single = 0
+        double = 0
+        for num in nums:
+            if num < 10:
+                single += num
+            else:
+                double += num
+        if single > double:
+            return True
+        elif double > single:
+            return True
+        else:
+            return False
+'''
+'''class Solution(object):
+    def scoreOfString(self, s):
+        total = 0
+
+        for i in range(len(s) - 1):
+            total += abs(ord(s[i]) - ord(s[i + 1]))
+
+        return total'''
+'''class Solution(object):
+    def reverseString(self, s):
+       l=0
+       r=len(s)-1
+       while l<r:
+        s[l],s[r] = s[r],s[l]
+        l+=1
+        r-=1'''
+'''class Solution(object):
+    def isPalindrome(self, s):
+        new = ""
+        for ch in s:
+            if ch.isalnum():
+                new += ch.lower()
+        return new == new[::-1]'''
+
