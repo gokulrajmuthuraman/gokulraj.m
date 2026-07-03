@@ -1,0 +1,105 @@
+DAY 11 [ 02/ 07/2026] 
+
+ 
+
+ 
+
+class Solution(object): 
+
+    def scoreOfString(self, s): 
+
+        total = 0 
+
+        for i in range(len(s) - 1): 
+
+            total += abs(ord(s[i]) - ord(s[i + 1])) 
+
+        return total''' 
+
+''' 
+
+class Solution(object): 
+
+    def isPalindrome(self, s): 
+
+        new = "" 
+
+        for ch in s: 
+
+            if ch.isalnum(): 
+
+                new += ch.lower() 
+
+        return new == new[::-1]''' 
+
+'''class Solution(object): 
+
+    def isAnagram(self, s, t): 
+
+        if sorted(s)==sorted(t): 
+
+            return True 
+
+        else: 
+
+            return False 
+
+   ''' 
+
+'''class Solution(object): 
+
+    def firstUniqChar(self, s): 
+
+        d={} 
+
+        for i in s: 
+
+            if i in d: 
+
+                d[i]=d[i]+1 
+
+            else: 
+
+                d[i]=1 
+
+        for i in range(len(s)): 
+
+            if d[s[i]]==1: 
+
+                return i 
+
+             
+
+        return -1 
+
+        ''' 
+
+'''class Solution(object): 
+
+    def longestCommonPrefix(self, strs): 
+
+        prefix = strs[0] 
+
+        for word in strs: 
+
+            while not word.startswith(prefix): 
+
+                prefix = prefix[:-1] 
+
+        return prefix''' 
+
+'''class Solution(object): 
+
+    def strStr(self, h, n): 
+
+        for i in range(len(h) - len(n) + 1): 
+
+            if h[i:i+len(n)] == n: 
+
+                return i 
+
+        return -1''' 
+
+ 
+
+ 
